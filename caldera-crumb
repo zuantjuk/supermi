@@ -1,0 +1,78 @@
+/* Caldera Forms Breadcrumbs */
+
+.caldera-grid .breadcrumb:before,
+.caldera-grid .breadcrumb:after 
+{
+  height: 1px;
+  content: "";
+  clear: both;
+  display: inline;
+}
+
+.caldera-grid .breadcrumb {
+  width: auto;
+  margin: 0px 0px 25px !important;
+  padding: 0px;
+  list-style-type: none;
+}
+
+.caldera-grid .breadcrumb li {
+  background-color: #f9f9f9;
+  width: 100%;
+  padding: 1px 1px 1px 1px;
+  text-align: left;
+  float: left;
+  border-bottom: 3px solid #009AD8;
+  border-left: 0px solid #fff;
+  background-clip: padding-box;
+}
+
+.caldera-grid .breadcrumb li.active {
+  border-bottom: 3px solid #da1a32;
+}
+
+.caldera-grid .breadcrumb li a {
+  color: #333;
+}
+
+.caldera-grid .breadcrumb li a:hover {
+  color: #443 !important;
+  text-decoration: solid;
+}
+
+
+@media (min-width: 720px){
+  .caldera-grid .breadcrumb li {
+    float: none;
+    width: 49%;
+    text-align: center;
+    margin-bottom: 0px;
+    border-left: none;
+  }
+  .caldera-grid .breadcrumb li a {
+    font-size: 13px;
+    font-family:montserrat;
+    font-style:bold;
+  }
+  ::before { 
+  display:none;
+}
+}
+
+@media (max-width: 720px){
+  .caldera-grid .breadcrumb li {
+    float: none;
+    width: 49%;
+    text-align: center;
+    margin-bottom: 0px;
+    border-left: none;
+  }
+  .caldera-grid .breadcrumb li a {
+    font-size: 13px;
+    font-family:montserrat;
+    font-style:bold;
+  }
+  ::before { 
+  display:none;
+}
+} 
